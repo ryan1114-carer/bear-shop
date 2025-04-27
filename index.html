@@ -75,7 +75,7 @@
     <script>
         async function fetchProducts() {
             try {
-                const response = await fetch('https://noapi.com/commodity/'); // 模擬的API
+                const response = await fetch('https://kusdom.com/api.php?route=kshop/api/getProducts&apikey=7017b57cc9c20c93e3d755d7'); // 模擬的API
                 const products = await response.json();
 
                 if (products.length === 0) {
@@ -96,7 +96,7 @@
                         `;
 
                         productElement.addEventListener('click', () => {
-                            window.location.href = `https://noapi.com/commodity/${product.id}`;
+                            window.location.href = `https://kusdom.com/bear_shop/product/${product.id}`;
                         });
 
                         container.appendChild(productElement);
