@@ -88,15 +88,15 @@
                         const productElement = document.createElement('div');
                         productElement.classList.add('product');
                         productElement.innerHTML = `
-                            <img src="${product.image}" alt="${product.title}">
+                            <img src="${image_cover}" alt="${product.title}">
                             <div class="product-info">
                                 <h3>${product.title}</h3>
-                                <p>價格: $${product.price}</p>
+                                <p>價格: $${price}</p>
                             </div>
                         `;
 
                         productElement.addEventListener('click', () => {
-                            window.location.href = `https://kusdom.com/bear_shop/product/${product.id}`;
+                            window.location.href = `https://kusdom.com/bear_shop/product/${product_id}`;
                         });
 
                         container.appendChild(productElement);
