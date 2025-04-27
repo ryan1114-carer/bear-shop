@@ -69,7 +69,7 @@
     </div>
 
     <div id="noApiMessage" class="no-api" style="display: none;">
-        沒有API
+        沒有API或商品
     </div>
 
     <script>
@@ -88,7 +88,7 @@
                         const productElement = document.createElement('div');
                         productElement.classList.add('product');
                         productElement.innerHTML = `
-                            <img src="${image_cover}" alt="${product.title}">
+                            <img src="${image_cover}" alt="${name}">
                             <div class="product-info">
                                 <h3>${name}</h3>
                                 <p>價格: $${price}</p>
